@@ -1,0 +1,17 @@
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.deps.json
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.pdb
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.Contract.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Application.Contract.pdb
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.csproj.AssemblyReference.cache
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.AssemblyInfoInputs.cache
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.AssemblyInfo.cs
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.csproj.CoreCompileInputs.cache
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.csproj.CopyComplete
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\refint\MB.Application.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\MB.Application.pdb
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\obj\Debug\net6.0\ref\MB.Application.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Domain.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application\bin\Debug\net6.0\MB.Domain.pdb

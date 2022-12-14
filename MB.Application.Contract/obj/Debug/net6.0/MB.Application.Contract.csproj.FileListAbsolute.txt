@@ -1,0 +1,12 @@
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\bin\Debug\net6.0\MB.Application.Contract.deps.json
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\bin\Debug\net6.0\MB.Application.Contract.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\bin\Debug\net6.0\MB.Application.Contract.pdb
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.csproj.AssemblyReference.cache
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.AssemblyInfoInputs.cache
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.AssemblyInfo.cs
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.csproj.CoreCompileInputs.cache
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\refint\MB.Application.Contract.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\MB.Application.Contract.pdb
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Application.Contract\obj\Debug\net6.0\ref\MB.Application.Contract.dll
