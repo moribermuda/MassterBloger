@@ -10,10 +10,12 @@ namespace MB.Domain.ArticleAgg
         public string Image { get; private set; }
         public string Content { get; private set; }
         public bool IsDeleted { get; private set; }
-        public DateTime DateTime { get; private set; }
+        public DateTime CreationDate { get; private set; }
         public long ArticleCategoryId { get; private set; }
         public ArticleCategory ArticleCategory { get; private set; }
-
+        protected Article()
+        {
+        }
         public Article(string title, string shortDescription, string image, string content, long articleCategoryId)
         {
             Title = title;
@@ -21,7 +23,7 @@ namespace MB.Domain.ArticleAgg
             Image = image;
             Content = content;
             ArticleCategoryId = articleCategoryId;
-            DateTime= DateTime.Now;
+            CreationDate= DateTime.Now;
             IsDeleted= false;
         }
     }

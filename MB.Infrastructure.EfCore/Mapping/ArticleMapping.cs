@@ -16,9 +16,9 @@ namespace MB.Infrastructure.EfCore.Mapping
             builder.Property(x => x.Image);
             builder.Property(x => x.Content);
             builder.Property(x => x.IsDeleted);
-            builder.Property(x => x.DateTime);
+            builder.Property(x => x.CreationDate);
 
-            builder.HasOne(x=>x.ArticleCategory).WithMany(x=>x.)
+            builder.HasOne(x=>x.ArticleCategory).WithMany(x=>x.articles).HasForeignKey(x=>x.ArticleCategoryId);
 
         }
     }

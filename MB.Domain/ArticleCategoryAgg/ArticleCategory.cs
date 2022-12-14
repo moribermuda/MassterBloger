@@ -12,6 +12,10 @@ namespace MB.Domain.ArticleCategoryAgg
         public DateTime CreationDate { get; set; }
         public ICollection<Article> articles { get; set; }
 
+        protected ArticleCategory()
+        {
+        }
+
         public ArticleCategory(string title,IArticleCategoryServices services)
         {
             services.CheckTitelIsExist(title);
