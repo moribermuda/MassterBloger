@@ -1,4 +1,5 @@
-﻿using MB.Domain.ArticleCategoryAgg.Services;
+﻿using MB.Domain.ArticleAgg;
+using MB.Domain.ArticleCategoryAgg.Services;
 
 namespace MB.Domain.ArticleCategoryAgg
 {
@@ -9,6 +10,7 @@ namespace MB.Domain.ArticleCategoryAgg
         public bool IsDeleted { get; set; }
 
         public DateTime CreationDate { get; set; }
+        public ICollection<Article> articles { get; set; }
 
         public ArticleCategory(string title,IArticleCategoryServices services)
         {
@@ -16,6 +18,7 @@ namespace MB.Domain.ArticleCategoryAgg
             Title = title;
             IsDeleted = false;
             CreationDate = DateTime.Now;
+            articles = new List<Article>();
         }
         public void Rename(string title,IArticleCategoryServices services)
         {
