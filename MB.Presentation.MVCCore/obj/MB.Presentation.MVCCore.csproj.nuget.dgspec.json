@@ -208,6 +208,9 @@
               },
               "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.EfCore\\MB.Infrastructure.EfCore.csproj": {
                 "projectPath": "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.EfCore\\MB.Infrastructure.EfCore.csproj"
+              },
+              "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.Query\\MB.Infrastructure.Query.csproj": {
+                "projectPath": "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.Query\\MB.Infrastructure.Query.csproj"
               }
             }
           }
@@ -307,6 +310,64 @@
               "version": "[6.0.9, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.Query\\MB.Infrastructure.Query.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.Query\\MB.Infrastructure.Query.csproj",
+        "projectName": "MB.Infrastructure.Query",
+        "projectPath": "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.Query\\MB.Infrastructure.Query.csproj",
+        "packagesPath": "C:\\Users\\TUF\\.nuget\\packages\\",
+        "outputPath": "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.Query\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\TUF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Users\\TUF\\.nuget\\packages": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.EfCore\\MB.Infrastructure.EfCore.csproj": {
+                "projectPath": "D:\\project\\vsstudio project\\efcore\\MasterBlogger\\MB.Infrastructure.EfCore\\MB.Infrastructure.EfCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

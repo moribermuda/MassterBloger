@@ -7,6 +7,7 @@ using MB.Domain.ArticleCategoryAgg;
 using MB.Domain.ArticleCategoryAgg.Services;
 using MB.Infrastructure.EfCore;
 using MB.Infrastructure.EfCore.Repository;
+using MB.Infrastructure.Query;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -23,6 +24,8 @@ namespace MB.Infrastructure.Core
             service.AddTransient<IArticleApplication, ArticleApplication>();
             service.AddTransient<IArticleRepository, ArticleRepository>();
             service.AddTransient<IArticleServices, ArticleServices>();
+
+            service.AddTransient<IArticleQuery, ArticleQuery>();
             service.AddDbContext<MasterBloggContext>(x => x.UseSqlServer(connectionString));
         }
     }

@@ -74,3 +74,5 @@ D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\obj\Deb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net6.0\MB.Presentation.MVCCore.pdb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net6.0\MB.Presentation.MVCCore.genruntimeconfig.cache
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net6.0\ref\MB.Presentation.MVCCore.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Query.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Query.pdb

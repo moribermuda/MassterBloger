@@ -19,3 +19,5 @@ D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.Core\obj\Debu
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.Core\obj\Debug\net6.0\refint\MB.Infrastructure.Core.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.Core\obj\Debug\net6.0\MB.Infrastructure.Core.pdb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.Core\obj\Debug\net6.0\ref\MB.Infrastructure.Core.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.Core\bin\Debug\net6.0\MB.Infrastructure.Query.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.Core\bin\Debug\net6.0\MB.Infrastructure.Query.pdb
