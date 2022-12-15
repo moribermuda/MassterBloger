@@ -20,6 +20,12 @@ namespace MB.Infrastructure.EfCore.Repository
             Save();
         }
 
+        public bool Exist(string title)
+        {
+            return context.articles.Any(a => a.Title == title);
+
+        }
+
         public Article Get(long id)
         {
             return context.articles.FirstOrDefault(x => x.Id == id);

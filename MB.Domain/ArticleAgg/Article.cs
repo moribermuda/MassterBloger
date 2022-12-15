@@ -18,6 +18,7 @@ namespace MB.Domain.ArticleAgg
         }
         public Article(string title, string shortDescription, string image, string content, long articleCategoryId)
         {
+            Validate(title,articleCategoryId);
             Title = title;
             ShortDescription = shortDescription;
             Image = image;
@@ -28,6 +29,7 @@ namespace MB.Domain.ArticleAgg
         }
         public void Edit(string title, string shortDescription, string image, string content, long articleCategoryId)
         {
+            Validate(title,articleCategoryId);
             Title = title;
             ShortDescription = shortDescription;
             Image = image;
@@ -42,6 +44,12 @@ namespace MB.Domain.ArticleAgg
         {
             IsDeleted = false;
         }
-
+        public void Validate(string title,long articleCategoryId)
+        {
+            if (string.IsNullOrEmpty(title))
+                throw new ArgumentNullException("title");
+            if (articleCategoryId == 0)
+                throw new ArgumentNullException("category not found");
+        }
     }
 }
