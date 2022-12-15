@@ -4,5 +4,7 @@
     {
         void Create(CreateArticle command);       
         List<ArticleViewModel> GetList();
+        void Edit(EditArticle command);
+        EditArticle Get(long id);
     }
 }

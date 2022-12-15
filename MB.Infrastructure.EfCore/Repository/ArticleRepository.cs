@@ -17,7 +17,12 @@ namespace MB.Infrastructure.EfCore.Repository
         public void CreatAndSave(Article article)
         {
            context.Add(article);
-            context.SaveChanges();
+            Save();
+        }
+
+        public Article Get(long id)
+        {
+            return context.articles.FirstOrDefault(x => x.Id == id);
         }
 
         public List<ArticleViewModel> GetList()
@@ -30,6 +35,11 @@ namespace MB.Infrastructure.EfCore.Repository
                 IsDeleted= x.IsDeleted,
                 CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
             }).ToList();
+        }
+
+        public void Save()
+        {
+           context.SaveChanges();
         }
     }
 }
