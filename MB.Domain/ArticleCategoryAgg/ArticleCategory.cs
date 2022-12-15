@@ -5,12 +5,12 @@ namespace MB.Domain.ArticleCategoryAgg
 {
     public class ArticleCategory
     {
-        public long Id { get; set; }
-        public string Title { get; set; }
-        public bool IsDeleted { get; set; }
+        public long Id { get;private set; }
+        public string Title { get;private set; }
+        public bool IsDeleted { get;private set; }
 
-        public DateTime CreationDate { get; set; }
-        public ICollection<Article> articles { get; set; }
+        public DateTime CreationDate { get;private set; }
+        public ICollection<Article> Articles { get; set; }
 
         protected ArticleCategory()
         {
@@ -22,7 +22,7 @@ namespace MB.Domain.ArticleCategoryAgg
             Title = title;
             IsDeleted = false;
             CreationDate = DateTime.Now;
-            articles = new List<Article>();
+            Articles = new List<Article>();
         }
         public void Rename(string title,IArticleCategoryServices services)
         {

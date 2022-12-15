@@ -6,6 +6,7 @@ D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Deb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Presentation.MVCCore.runtimeconfig.json
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Presentation.MVCCore.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Presentation.MVCCore.pdb
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\System.Web.Razor.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -41,9 +42,11 @@ D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Deb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Application.Contract.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Application.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Domain.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Core.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.EfCore.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Application.Contract.pdb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Application.pdb
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Core.pdb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.EfCore.pdb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Domain.pdb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net6.0\MB.Presentation.MVCCore.csproj.AssemblyReference.cache
@@ -71,6 +74,3 @@ D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\obj\Deb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net6.0\MB.Presentation.MVCCore.pdb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net6.0\MB.Presentation.MVCCore.genruntimeconfig.cache
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\obj\Debug\net6.0\ref\MB.Presentation.MVCCore.dll
-D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\System.Web.Razor.dll
-D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Core.dll
-D:\project\vsstudio project\efcore\MasterBlogger\MB.Presentation.MVCCore\bin\Debug\net6.0\MB.Infrastructure.Core.pdb

@@ -14,6 +14,12 @@ namespace MB.Infrastructure.EfCore.Repository
             this.context = context;
         }
 
+        public void CreatAndSave(Article article)
+        {
+           context.Add(article);
+            context.SaveChanges();
+        }
+
         public List<ArticleViewModel> GetList()
         {
            return context.articles.Include(x=>x.ArticleCategory).Select(x => new ArticleViewModel
