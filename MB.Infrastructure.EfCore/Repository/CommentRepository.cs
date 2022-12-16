@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MB.Domain.CommentAgg;
 
 namespace MB.Infrastructure.EfCore.Repository
 {
-    internal class CommentRepository
+    public class CommentRepository : ICommentRepository
     {
+        private readonly MasterBloggContext context;
+
+        public CommentRepository(MasterBloggContext context)
+        {
+            this.context = context;
+        }
+
+        public void CreatAndSave(Comment entity)
+        {
+            context.commnts.Add(entity);
+            context.SaveChanges();
+        }
     }
 }

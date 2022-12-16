@@ -19,7 +19,7 @@ namespace MB.Infrastructure.EfCore.Mapping
             builder.Property(x => x.CreationDate);
 
             builder.HasOne(x=>x.ArticleCategory).WithMany(x=>x.Articles).HasForeignKey(x=>x.ArticleCategoryId);
-            
+            builder.HasMany(x=>x.comments).WithOne(x=>x.Article).HasForeignKey(x=>x.ArticleId);
 
         }
     }

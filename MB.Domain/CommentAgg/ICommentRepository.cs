@@ -2,6 +2,6 @@
 {
     public interface ICommentRepository
     {
-
+        void CreatAndSave(Comment entity);
     }
 }

@@ -16,7 +16,7 @@ namespace MB.Infrastructure.EfCore.Mapping
             builder.Property(x => x.Email);
             builder.Property(x => x.CreationDate);
 
-            builder.HasOne(x=>x.Article).WithMany(x=>x.)
+            builder.HasOne(x=>x.Article).WithMany(x=>x.comments).HasForeignKey(x=>x.ArticleId);
         }
     }
 }
