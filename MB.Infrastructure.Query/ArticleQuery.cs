@@ -1,4 +1,5 @@
-﻿using MB.Infrastructure.EfCore;
+﻿using MB.Domain.CommentAgg;
+using MB.Infrastructure.EfCore;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 
@@ -15,7 +16,9 @@ namespace MB.Infrastructure.Query
 
         public ArticleQueryView Get(long id)
         {
-            return context.articles.Include(x => x.ArticleCategory).Select(x => new ArticleQueryView
+            return context.articles
+                .Include(x => x.ArticleCategory)
+                .Select(x => new ArticleQueryView
             {
                 Id = x.Id,
                 Title = x.Title,
@@ -24,12 +27,31 @@ namespace MB.Infrastructure.Query
                 ArticleCategory = x.ArticleCategory.Title,
                 CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
                 Content = x.Content,
-            }).FirstOrDefault(x => x.Id == id);
+                CommentCont = x.Comments.Count(x => x.Status == Statuses.Confirmed),
+                Comments = MapComments(x.Comments.Where(x => x.Status == Statuses.Confirmed))
+                }).FirstOrDefault(x => x.Id == id);
+        }
+
+        private static List<CommentQueryView> MapComments(IEnumerable<Comment> comments)
+        {
+            var resualt = new List<CommentQueryView>();
+            foreach(var comment in comments)
+            {
+                resualt.Add(new CommentQueryView
+                {
+                    name = comment.Name,
+                    Message = comment.Message,
+                    CreationDate = comment.CreationDate.ToString(CultureInfo.InvariantCulture),
+                });
+            }
+            return resualt;
         }
 
         public List<ArticleQueryView> GetArticles()
         {
-            return context.articles.Include(x=>x.ArticleCategory).Select(x=>new ArticleQueryView
+            return context.articles
+                .Include(x => x.Comments)
+                .Include(x=>x.ArticleCategory).Select(x=>new ArticleQueryView
             {
                 Id= x.Id,
                 Title= x.Title,
@@ -37,7 +59,8 @@ namespace MB.Infrastructure.Query
                 Image = x.Image,
                 ArticleCategory=x.ArticleCategory.Title,
                 CreationDate = x.CreationDate.ToString(CultureInfo.InvariantCulture),
-            }).ToList();
+                CommentCont = x.Comments.Count(x=> x.Status==Statuses.Confirmed),
+                }).ToList();
         }
     }
 }

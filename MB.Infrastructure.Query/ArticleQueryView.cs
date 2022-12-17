@@ -10,6 +10,8 @@
         public string ArticleCategory { get; set; }
 
         public string CreationDate { get; set; }
+        public long CommentCont { get; set; }
+        public List<CommentQueryView> Comments { get; set; }
 
     }
 }
