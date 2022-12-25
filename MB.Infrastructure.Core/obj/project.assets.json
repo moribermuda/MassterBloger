@@ -738,6 +738,19 @@
           }
         }
       },
+      "01_FrameWork/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.9"
+        },
+        "compile": {
+          "bin/placeholder/01_FrameWork.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01_FrameWork.dll": {}
+        }
+      },
       "MB.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -766,6 +779,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "01_FrameWork": "1.0.0",
           "MB.Application.Contract": "1.0.0"
         },
         "compile": {
@@ -1967,6 +1981,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "01_FrameWork/1.0.0": {
+      "type": "project",
+      "path": "../01_FrameWork/01_FrameWork.csproj",
+      "msbuildProject": "../01_FrameWork/01_FrameWork.csproj"
     },
     "MB.Application/1.0.0": {
       "type": "project",

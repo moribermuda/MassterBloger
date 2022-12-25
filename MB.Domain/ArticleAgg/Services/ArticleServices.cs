@@ -11,7 +11,7 @@
 
         public void CheckTitelIsExist(string title)
         {
-            if (articleRepository.Exist(title))
+            if (articleRepository.Exist(x=>x.Title == title))
                 throw new DuplicateWaitObjectException();
         }
     }

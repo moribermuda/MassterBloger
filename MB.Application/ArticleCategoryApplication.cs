@@ -1,6 +1,8 @@
 ﻿using MB.Application.Contract.ArticleCategory;
 using MB.Domain.ArticleCategoryAgg;
 using MB.Domain.ArticleCategoryAgg.Services;
+using System.Collections.Generic;
+using System.Globalization;
 
 namespace MB.Application
 {
@@ -18,20 +20,26 @@ namespace MB.Application
         public void Add(CreateArticleCategory command)
         {
             var articleCategory = new ArticleCategory(command.Title, categorySrvices);
-            articleCategoryRepository.Create(articleCategory);
-            articleCategoryRepository.Save();
+            articleCategoryRepository.Creat(articleCategory);
+          //  articleCategoryRepository.Save();
         }
 
         public List<ArticleCategoryViewModel> GetAll()
         {
-            return articleCategoryRepository.GetAll();
+            var articleCateforis = articleCategoryRepository.GetAll();
+            var resault =new List<ArticleCategoryViewModel>();
+            foreach (ArticleCategory Alt in articleCateforis)
+            {
+                resault.Add(new ArticleCategoryViewModel {Id=Alt.Id,Title = Alt.Title,CreationDate=Alt.CreationDate.ToString(CultureInfo.InvariantCulture),IsDeleted=Alt.IsDeleted});
+            }
+            return resault.OrderByDescending(x=>x.Id).ToList();
         }
 
         public void Rename(RenameArticleCategory command)
         {
             var ArticleCategory = articleCategoryRepository.Get(command.Id);
             ArticleCategory.Rename(command.Title,categorySrvices);
-            articleCategoryRepository.Save();
+       //     articleCategoryRepository.Save();
         }
 
         public RenameArticleCategory Get(long id)
@@ -48,14 +56,14 @@ namespace MB.Application
         {
             var category = articleCategoryRepository.Get(id);
             category.Remove();
-            articleCategoryRepository.Save();
+         //   articleCategoryRepository.Save();
         }
 
         public void Activate(long id)
         {
             var category = articleCategoryRepository.Get(id);
             category.Restore();
-            articleCategoryRepository.Save();
+       //     articleCategoryRepository.Save();
         }
     }
 }

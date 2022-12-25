@@ -1,34 +1,18 @@
-﻿using MB.Application.Contract.Article;
+﻿using _01_FrameWork.Infrastructure;
+using MB.Application.Contract.Article;
 using MB.Domain.ArticleAgg;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
 
 namespace MB.Infrastructure.EfCore.Repository
 {
-    public class ArticleRepository : IArticleRepository
+    public class ArticleRepository :BaseRepository<long,Article>, IArticleRepository
     {
         private readonly MasterBloggContext context;
 
-        public ArticleRepository(MasterBloggContext context)
+        public ArticleRepository(MasterBloggContext context):base(context)
         {
             this.context = context;
-        }
-
-        public void CreatAndSave(Article article)
-        {
-           context.Add(article);
-            Save();
-        }
-
-        public bool Exist(string title)
-        {
-            return context.articles.Any(a => a.Title == title);
-
-        }
-
-        public Article Get(long id)
-        {
-            return context.articles.FirstOrDefault(x => x.Id == id);
         }
 
         public List<ArticleViewModel> GetList()
@@ -43,9 +27,5 @@ namespace MB.Infrastructure.EfCore.Repository
             }).ToList();
         }
 
-        public void Save()
-        {
-           context.SaveChanges();
-        }
     }
 }

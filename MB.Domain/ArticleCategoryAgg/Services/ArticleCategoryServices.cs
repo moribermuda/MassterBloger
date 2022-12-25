@@ -11,7 +11,7 @@
 
         public void CheckTitelIsExist(string title)
         {
-            if (categoryRepository.Exist(title))
+            if (categoryRepository.Exist(x=>x.Title==title))
                 throw new DuplicateWaitObjectException("This Record : "+title+" is Already Exist In DateBase");
         }
     }

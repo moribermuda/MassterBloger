@@ -1,14 +1,10 @@
-﻿using MB.Application.Contract.ArticleCategory;
+﻿using _01_FrameWork.Infrastructure;
+using MB.Application.Contract.ArticleCategory;
 
 namespace MB.Domain.ArticleCategoryAgg
 {
-    public interface IArticleCategoryRepository
+    public interface IArticleCategoryRepository : IRepository<long,ArticleCategory>
     {
-        List<ArticleCategoryViewModel> GetAll();
-        void Create(ArticleCategory category);
-        ArticleCategory Get(long id);
-        void Save();
-        bool Exist(string title);
     }
 
 }

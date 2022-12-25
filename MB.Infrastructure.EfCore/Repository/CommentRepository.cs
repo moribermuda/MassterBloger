@@ -1,30 +1,20 @@
-﻿using MB.Application.Contract.Comment;
+﻿using _01_FrameWork.Infrastructure;
+using MB.Application.Contract.Comment;
 using MB.Domain.CommentAgg;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;
-using System.Security.Cryptography.X509Certificates;
 
 namespace MB.Infrastructure.EfCore.Repository
 {
-    public class CommentRepository : ICommentRepository
+    public class CommentRepository :BaseRepository<long,Comment> , ICommentRepository
     {
         private readonly MasterBloggContext context;
 
-        public CommentRepository(MasterBloggContext context)
+        public CommentRepository(MasterBloggContext context) : base(context) 
         {
             this.context = context;
         }
 
-        public void CreatAndSave(Comment entity)
-        {
-            context.commnts.Add(entity);
-            Save();
-        }
-
-        public Comment Get(long id)
-        {
-            return context.commnts.FirstOrDefault(x => x.Id == id);
-        }
 
         public List<CommentViewModel> GetList()
         {
@@ -40,9 +30,6 @@ namespace MB.Infrastructure.EfCore.Repository
            }).ToList();
         }
 
-        public void Save()
-        {
-            context.SaveChanges();
-        }
+    
     }
 }

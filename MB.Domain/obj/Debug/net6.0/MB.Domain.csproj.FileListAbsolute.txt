@@ -13,3 +13,5 @@ D:\project\vsstudio project\efcore\MasterBlogger\MB.Domain\obj\Debug\net6.0\MB.D
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Domain\obj\Debug\net6.0\refint\MB.Domain.dll
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Domain\obj\Debug\net6.0\MB.Domain.pdb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Domain\obj\Debug\net6.0\ref\MB.Domain.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Domain\bin\Debug\net6.0\01_FrameWork.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Domain\bin\Debug\net6.0\01_FrameWork.pdb

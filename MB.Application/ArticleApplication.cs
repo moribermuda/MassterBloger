@@ -16,14 +16,14 @@ namespace MB.Application
         public void Create(CreateArticle command)
         {
             var Article = new Article(command.Title,command.ShortDescription,command.Image,command.Content,command.ArticleCategoryId);
-            articleRepository.CreatAndSave(Article);
+            articleRepository.Creat(Article);
         }
 
         public void Edit(EditArticle command)
         {
             var Article = articleRepository.Get(command.Id);
             Article.Edit(command.Title,command.ShortDescription,command.Image,command.Content,command.ArticleCategoryId);
-            articleRepository.Save();
+           // articleRepository.Save();
         }
 
         public EditArticle Get(long id)
@@ -48,13 +48,13 @@ namespace MB.Application
         {
             var article = articleRepository.Get(id);
             article.Remove();
-            articleRepository.Save();
+         //   articleRepository.Save();
         }
         public void Activate(long id)
         {
             var article = articleRepository.Get(id);
             article.Activate();
-            articleRepository.Save();
+        //    articleRepository.Save();
         }
 
     }

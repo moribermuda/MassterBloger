@@ -1,12 +1,10 @@
-﻿using MB.Application.Contract.Comment;
+﻿using _01_FrameWork.Infrastructure;
+using MB.Application.Contract.Comment;
 
 namespace MB.Domain.CommentAgg
 {
-    public interface ICommentRepository
+    public interface ICommentRepository : IRepository<long , Comment>
     {
         List<CommentViewModel> GetList();
-        void CreatAndSave(Comment entity);
-        Comment Get(long id);
-        void Save();
     }
 }

@@ -17,3 +17,5 @@ D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.EfCore\obj\De
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.EfCore\obj\Debug\net6.0\MB.Infrastructure.EfCore.pdb
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.EfCore\obj\Debug\net6.0\MB.Infrastructure.EfCore.genruntimeconfig.cache
 D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.EfCore\obj\Debug\net6.0\ref\MB.Infrastructure.EfCore.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.EfCore\bin\Debug\net6.0\01_FrameWork.dll
+D:\project\vsstudio project\efcore\MasterBlogger\MB.Infrastructure.EfCore\bin\Debug\net6.0\01_FrameWork.pdb
